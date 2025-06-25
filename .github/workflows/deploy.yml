@@ -3,11 +3,11 @@ name: Deploy EC2 Using Terraform
 on:
   push:
     branches:
-      - main  # Change this if you're using a different branch
+      - main  # Trigger only on push to 'main' branch
 
 jobs:
   terraform:
-    name: 'Terraform EC2 Deployment'
+    name: Terraform EC2 Deployment
     runs-on: ubuntu-latest
 
     steps:
